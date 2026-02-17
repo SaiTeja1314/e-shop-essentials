@@ -45,8 +45,11 @@ const Index = () => {
               <img
                 src={products.find((p) => p.category === cat)?.image}
                 alt={cat}
+                width={600}
+                height={700}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <span className="relative text-lg font-semibold text-white">{cat}</span>
